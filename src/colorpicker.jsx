@@ -17,7 +17,7 @@ const ColorPicker = ({ palette, selected, onSelect, ...rest }) => {
 
   const cell = i =>
     <div
-      className={classNames[i]}
+      styleName={classNames[i]}
       grow={selectedIndex % 2 ^ i % 2}
       style={{ background: palette[i] }}
       onClick={() => onSelect(palette[i])}
@@ -26,7 +26,7 @@ const ColorPicker = ({ palette, selected, onSelect, ...rest }) => {
   const column = cells => {
     const grow = !!cells[0] ^ selectedIndex > 1;
     return (
-      <Vertical grow={grow} className={grow ? 'vertical' : 'width-transitioned'}>
+      <Vertical grow={grow} styleName={grow ? 'vertical' : 'width-transitioned'}>
         {cell(cells[0])}
         {cell(cells[1])}
       </Vertical>
@@ -34,7 +34,7 @@ const ColorPicker = ({ palette, selected, onSelect, ...rest }) => {
   };
 
   return (
-    <Horizontal className="container" {...rest}>
+    <Horizontal styleName="container" {...rest}>
       {column([0, 1])}
       {column([2, 3])}
     </Horizontal>
