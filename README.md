@@ -1,6 +1,6 @@
 [![npm version](https://img.shields.io/npm/v/react-4color-picker.svg?style=flat-square)](https://www.npmjs.com/package/react-4color-picker) [![Build Status](https://img.shields.io/travis/aush/react-4color-picker.svg?style=flat-square)](https://travis-ci.org/aush/react-4color-picker) [![Dependency Status](https://img.shields.io/david/aush/react-4color-picker.svg?style=flat-square)](https://david-dm.org/aush/react-4color-picker) [![devDependency Status](https://img.shields.io/david/dev/aush/react-4color-picker.svg?style=flat-square)](https://david-dm.org/aush/react-4color-picker#info=devDependencies) [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/aush/react-4color-picker/master/LICENSE)
 
-[demo!](assets/react-4color-picker.gif)
+<img src="assets/react-4color-picker.gif" width="510" height="107" />
 
 # React 4 Color Picker
 Demo: http://codepen.io/aush/pen/dGQeaW
