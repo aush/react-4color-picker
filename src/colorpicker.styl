@@ -1,0 +1,23 @@
+$start = 100%
+$end = 50%
+
+transitioned(selector, prop, start, end)
+  .{selector}
+    {block}
+    {prop}: start
+    transition: prop 1s cubic-bezier(0.23, 1, 0.32, 1)
+  &:hover .{selector}
+    {prop}: end
+
+height100 =
+  height: 100%
+
+.vertical
+  {height100}
+
+.container
+  width: 196px
+  height: @width
+  transitioned(height-transitioned, height, $start, $end)
+  +transitioned(width-transitioned, width, $start, $end)
+    {height100}
